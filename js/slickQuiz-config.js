@@ -32,25 +32,25 @@ var quizJSON = {
           "correct": false
         } // no comma here
       ],
-      "correct": "<p><span>That's right!</span> The letter A is the first letter in the alphabet!</p>",
-      "incorrect": "<p><span>Uhh no.</span> It's the first letter of the alphabet. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
+      "correct": "<p><span>That's right!</span> The potato was first domesticated in Peru between 8000 and 5000 BC.</p>",
+      "incorrect": "<p><span>Uhh no.</span> The potato was first domesticated in Peru between 8000 and 5000 BC.</p>" // no comma here
     },
     { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
       "q": "Which of the following best represents your preferred breakfast?",
       "a": [{
-          "option": "Bacon and eggs",
+          "option": "a",
           "correct": false
         },
         {
-          "option": "Fruit, oatmeal, and yogurt",
+          "option": "a",
           "correct": true
         },
         {
-          "option": "Leftover pizza",
+          "option": "a",
           "correct": false
         },
         {
-          "option": "Eggs, fruit, toast, and milk",
+          "option": "a",
           "correct": true
         } // no comma here
       ],
@@ -61,19 +61,19 @@ var quizJSON = {
     { // Question 3 - Multiple Choice, Multiple True Answers, Select All
       "q": "Where are you right now? Select ALL that apply.",
       "a": [{
-          "option": "Planet Earth",
+          "option": "a",
           "correct": true
         },
         {
-          "option": "Pluto",
+          "option": "a",
           "correct": false
         },
         {
-          "option": "At a computing device",
+          "option": "a",
           "correct": true
         },
         {
-          "option": "The Milky Way",
+          "option": "a",
           "correct": true
         } // no comma here
       ],

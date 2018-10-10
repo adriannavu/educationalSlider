@@ -67,6 +67,7 @@ ol.questions li,
 ul.answers li,
 ul.responses li {
   list-style-type: none;
+  padding: 0;
 }
 
 .button {
