@@ -1,27 +1,17 @@
+//initialize Slick slider$
 $(".single-item").slick({
   dots: true
 });
 
-// Initialize map
-var mymap = L.map('mapid').setView([-12.19, -73.02], 3);
+// When user clicks preFamineIreland, display PostFamineIreland instead with legend
+preFamineIrelandImg.addEventListener('click', function() {
+  console.log('preFamineIrelandClicked');
+  preFamineIrelandImg.style.display = 'none';
+  postFamineIrelandImg.style.display = 'block';
+  postFamineIrelandText.style.visibility = 'visible';
+  postFamineIrelandLegendIcons.style.display = 'block';
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-  maxZoom: 18,
-  id: 'mapbox.outdoors',
-  accessToken: 'pk.eyJ1IjoiYWR2dSIsImEiOiJjam4zdDVlOGQyeGpxM2tvMmphOGJxYW1lIn0.gtW-IChpLU7NKuoe2SPt8w'
-}).addTo(mymap);
-
-//add circle to map
-var circle = L.circle([-12.19, -73.02], {
-  color: 'red',
-  fillColor: '#f03',
-  fillOpacity: 0.5,
-  radius: 300000
-}).addTo(mymap);
-
-//add popup to circle when clicked
-circle.bindPopup("Eight thousand years ago in South America, high atop the Andes, ancient Peruvians were the first to cultivate the potato.");
+});
 
 // Initiate Quiz
 $(function() {
@@ -43,7 +33,7 @@ var quizJSON = {
     "level5": "Stay in school, lil' potato..." // no comma here
   },
   "questions": [{ // Question 1 - Multiple Choice, Single True Answer
-      "q": "Where was the potato first domestiated?",
+      "q": "Where was the potato first domesticated?",
       "a": [{
           "option": "Argentina",
           "correct": false

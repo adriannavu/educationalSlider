@@ -1,7 +1,7 @@
 h1, h2, h3, p, li, a {
   display: inline-block;
   font-family: bitter;
-  color: white;
+  color: black;
 }
 
 .container {
@@ -15,7 +15,7 @@ h1, h2, h3, p, li, a {
 .single-item {
   text-align: center;
   color: black;
-  background: gray;
+  background: white;
   height: 500px;
 }
 
@@ -23,7 +23,7 @@ h1, h2, h3, p, li, a {
   height: inherit;
 }
 
-/* TITLE SLIDE (SLIDE 1) */
+/* TITLE SLIDE */
 #title-slide {
   background-image: url("../img/baked-close-up-potato.jpg");
   background-size: cover;
@@ -31,18 +31,98 @@ h1, h2, h3, p, li, a {
   height: 500px;
 }
 
-#title-slide h1, p {
+#title-slide p {
   position: relative;
-  top: 20%;
+  color: white;
 }
 
 #title-slide h1 {
   font-size: 50px;
+  color: white;
 }
 
-/* PERU SLIDE (SLIDE 2) */
-#mapid {
+/* PERU MAP SLIDE */
+#peru-map {
+  height: 389px;
+}
+
+/* INCA SLIDE */
+#inca-slide {
+  background-image: url("../img/inca.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px
+}
+
+#inca-slide p {
+  color: white;
+  margin-top: 77px;
+}
+
+/* IRISH SLIDE */
+#preFamineIrelandImg {
+  position: relative;
+  display: block;
+  left: 37%;
   height: 200px;
+}
+
+#postFamineIrelandImg {
+  position: relative;
+  display: none;
+  height: 200px;
+  left: 37%;
+}
+
+#postFamineIrelandText {
+  margin: 0;
+  visibility: hidden;
+}
+
+#irelandPopFallh3, #irelandPopFallp {
+  margin: 0;
+}
+
+.PopFallLegendSquare {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+}
+
+#LegendOver30Icon {
+  background-color: #800e00;
+}
+
+#Legend20to30Icon {
+  background-color: #f82600;
+}
+
+#Legend10to20Icon {
+  background-color: #faaa68;
+}
+
+#Legend0to10Icon {
+  background-color: #fefd00;
+}
+
+#LegendPopRiseIcon {
+  background-color: #1b8000;
+}
+
+#postFamineIrelandLegendIcons {
+  position: relative;
+  display: none;
+}
+
+#postFamineIrelandLegendText {
+  position: relative;
+  display: none;
+}
+
+#man {
+  height: 50px;
+  position: absolute;
 }
 
 /* QUIZ SLIDE */
@@ -134,6 +214,7 @@ ol.questions {
 
 ol.questions li {
   margin-left: 0;
+  display: block;
 }
 
 ul.answers {
