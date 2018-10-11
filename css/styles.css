@@ -1,4 +1,5 @@
-h1, h2, h3, p, li {
+h1, h2, h3, p, li, a {
+  display: inline-block;
   font-family: bitter;
   color: white;
 }
@@ -22,21 +23,26 @@ h1, h2, h3, p, li {
   height: inherit;
 }
 
-/* HISTORY SLIDE */
-.history-slide {
+/* TITLE SLIDE (SLIDE 1) */
+#title-slide {
   background-image: url("../img/baked-close-up-potato.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
 }
 
-.history-slide h1, p {
+#title-slide h1, p {
   position: relative;
   top: 20%;
 }
 
-.history-slide h1 {
+#title-slide h1 {
   font-size: 50px;
+}
+
+/* PERU SLIDE (SLIDE 2) */
+#mapid {
+  height: 200px;
 }
 
 /* QUIZ SLIDE */

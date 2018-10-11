@@ -2,18 +2,40 @@ $(".single-item").slick({
   dots: true
 });
 
-// SLICK QUIZ
+// Initialize map
+var mymap = L.map('mapid').setView([-12.19, -73.02], 3);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+  maxZoom: 18,
+  id: 'mapbox.outdoors',
+  accessToken: 'pk.eyJ1IjoiYWR2dSIsImEiOiJjam4zdDVlOGQyeGpxM2tvMmphOGJxYW1lIn0.gtW-IChpLU7NKuoe2SPt8w'
+}).addTo(mymap);
+
+//add circle to map
+var circle = L.circle([-12.19, -73.02], {
+  color: 'red',
+  fillColor: '#f03',
+  fillOpacity: 0.5,
+  radius: 300000
+}).addTo(mymap);
+
+//add popup to circle when clicked
+circle.bindPopup("Eight thousand years ago in South America, high atop the Andes, ancient Peruvians were the first to cultivate the potato.");
+
+// Initiate Quiz
 $(function() {
   $('#slickQuiz').slickQuiz({
     // options
   });
 });
 
+// Quiz questions and answers
 var quizJSON = {
   "info": {
     "name": "Test Your Knowledge!!",
     "main": "<p>Think you know about potato history? Find out with this super crazy knowledge quiz!</p>",
-    "results": "<h5><a href=https://www.washingtonpost.com/history/2018/10/08/christopher-columbus-potato-that-changed-world/?noredirect=on&utm_term=.f4b5fd7954f7>Learn More</a></h5><p>It's almost impossible imagining the world without the potato. Would the Industrial Revolution ever have happened? Would World War II have been lost by the Allies without the easy-to-grow crop that fed the Allied troops? Would it even have started? When you think about it like this, many major milestones in world history can all be at least partially attributed to the simple spud from the Peruvian hilltops.</p>",
+    "results": "<h5><a href=https://www.washingtonpost.com/history/2018/10/08/christopher-columbus-potato-that-changed-world/?noredirect=on&utm_term=.f4b5fd7954f7>Learn More</a></h5><p>It's almost impossible imagining the world without the potato. Would the Industrial Revolution ever have happened? Would World War II have been lost by the Allies without the easy-to-grow crop that fed the Allied troops? When you think about it like this, many major milestones in world history can all be at least partially attributed to the simple spud from the Peruvian hilltops.</p>",
     "level1": "Jedi Potato",
     "level2": "Knight Potato",
     "level3": "Padawan Potato",
