@@ -3,6 +3,43 @@ $(".single-item").slick({
   dots: true
 });
 
+// When user clicks on potato, make it grow
+$(document).ready(function() {
+  $("#growing-potato1").mouseenter(function() {
+    $("#growing-potato1").animate({
+      height: '100px',
+      width: '100px',
+    });
+  });
+});
+
+$(document).ready(function() {
+  $("#growing-potato2").mouseenter(function() {
+    $("#growing-potato2").animate({
+      height: '100px',
+      width: '100px',
+    });
+  });
+});
+
+$(document).ready(function() {
+  $("#growing-potato3").mouseenter(function() {
+    $("#growing-potato3").animate({
+      height: '100px',
+      width: '100px',
+    });
+  });
+});
+
+$(document).ready(function() {
+  $("#growing-potato4").mouseenter(function() {
+    $("#growing-potato4").animate({
+      height: '100px',
+      width: '100px',
+    });
+  });
+});
+
 // When user clicks preFamineIreland, display PostFamineIreland instead with legend
 preFamineIrelandImg.addEventListener('click', function() {
   console.log('preFamineIrelandClicked');

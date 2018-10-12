@@ -56,7 +56,14 @@ h1, h2, h3, p, li, a {
 
 #inca-slide p {
   color: white;
-  margin-top: 77px;
+  margin-top: 15%;
+}
+
+.incan-potato {
+  position: relative;
+  display: inline-block !important;
+  height: 50px;
+  top: 20%;
 }
 
 /* IRISH SLIDE */
@@ -81,6 +88,7 @@ h1, h2, h3, p, li, a {
 
 #irelandPopFallh3, #irelandPopFallp {
   margin: 0;
+  display: block;
 }
 
 .PopFallLegendSquare {
