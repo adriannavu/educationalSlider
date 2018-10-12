@@ -67,13 +67,18 @@ h1, h2, h3, p, li, a, span, label, .question, #plantQuizSubmit {
 }
 
 /* EUROPE SLIDE */
-label {
-  margin: 0 44px 0 37px;
+#europe-slide {
+  background-image: url("../img/europe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px
 }
 
 #belladonna-plant, #potato-plant {
   display: inline-block;
   width: 29%;
+  margin: 5px;
+  border-radius: 20px;
 }
 
 #plantQuizSubmit {
@@ -94,6 +99,7 @@ label {
 
 #plantQuizResults {
   font-family: bitter;
+  margin: 5px 0 5px 30px;
 }
 
 /* IRISH SLIDE */

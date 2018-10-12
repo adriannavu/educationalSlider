@@ -46,8 +46,8 @@ $(document).ready(function() {
 var myQuestions = [{
   question: "Can you identify the potato plant?",
   answers: {
-    A: 'This plant?',
-    B: 'Or maybe this plant?',
+    A: 'The first plant?',
+    B: 'Or maybe the second plant?',
   },
   correctAnswer: 'B'
 }];
