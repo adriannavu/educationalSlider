@@ -1,4 +1,4 @@
-h1, h2, h3, p, li, a {
+h1, h2, h3, p, li, a, span {
   display: inline-block;
   font-family: bitter;
   color: black;
@@ -77,20 +77,32 @@ h1, h2, h3, p, li, a {
 #postFamineIrelandImg {
   position: relative;
   display: none;
-  height: 200px;
-  left: 37%;
+  height: 210px;
+  left: 38%;
+}
+
+.irelandMapText {
+  margin: 0;
+  color: gray;
+  font-size: 80%;
+  margin: 0;
+  display: block;
 }
 
 #postFamineIrelandText {
+  display: none;
+}
+
+/*
+#irelandPoph3, #irelandPopp {
   margin: 0;
-  visibility: hidden;
+  display: block;
 }
 
 #irelandPopFallh3, #irelandPopFallp {
   margin: 0;
   display: block;
-}
-
+} */
 .PopFallLegendSquare {
   display: inline-block;
   height: 15px;
@@ -136,7 +148,7 @@ h1, h2, h3, p, li, a {
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 130px;
   background-color: #555;
   color: #fff;
   text-align: center;

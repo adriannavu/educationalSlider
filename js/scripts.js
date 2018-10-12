@@ -45,9 +45,18 @@ preFamineIrelandImg.addEventListener('click', function() {
   console.log('preFamineIrelandClicked');
   preFamineIrelandImg.style.display = 'none';
   postFamineIrelandImg.style.display = 'block';
-  postFamineIrelandText.style.visibility = 'visible';
+  preFamineIrelandText.style.display = 'none';
+  postFamineIrelandText.style.display = 'block';
   postFamineIrelandLegendIcons.style.display = 'block';
+});
 
+postFamineIrelandImg.addEventListener('click', function() {
+  console.log('postFamineIrelandClicked');
+  postFamineIrelandImg.style.display = 'none';
+  preFamineIrelandImg.style.display = 'block';
+  postFamineIrelandText.style.display = 'none';
+  preFamineIrelandText.style.display = 'block';
+  postFamineIrelandLegendIcons.style.display = 'none';
 });
 
 // Initiate Quiz
