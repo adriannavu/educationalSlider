@@ -1,4 +1,4 @@
-h1, h2, h3, p, li, a, span {
+h1, h2, h3, p, li, a, span, label, .question, #plantQuizSubmit {
   display: inline-block;
   font-family: bitter;
   color: black;
@@ -64,6 +64,36 @@ h1, h2, h3, p, li, a, span {
   display: inline-block !important;
   height: 50px;
   top: 20%;
+}
+
+/* EUROPE SLIDE */
+label {
+  margin: 0 44px 0 37px;
+}
+
+#belladonna-plant, #potato-plant {
+  display: inline-block;
+  width: 29%;
+}
+
+#plantQuizSubmit {
+  background-color: #297;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+  left: 22.14%;
+  position: absolute;
+}
+
+#plantQuizSubmit:hover {
+  background-color: #3a8;
+}
+
+#plantQuizResults {
+  font-family: bitter;
 }
 
 /* IRISH SLIDE */
