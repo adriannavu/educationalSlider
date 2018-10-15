@@ -2,6 +2,24 @@ h1, h2, h3, p, li, a, span, label, .question, #plantQuizSubmit {
   display: inline-block;
   font-family: bitter;
   color: black;
+  margin: 0.5rem;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p, label, .question, #plantQuizSubmit {
+  font-size: 1rem;
 }
 
 .container {
@@ -31,13 +49,9 @@ h1, h2, h3, p, li, a, span, label, .question, #plantQuizSubmit {
   height: 500px;
 }
 
-#title-slide p {
+#title-slide p, h1 {
+  top: 5rem;
   position: relative;
-  color: white;
-}
-
-#title-slide h1 {
-  font-size: 50px;
   color: white;
 }
 
@@ -126,11 +140,10 @@ h1, h2, h3, p, li, a, span, label, .question, #plantQuizSubmit {
 }
 
 .irelandMapText {
-  margin: 0;
   color: gray;
-  font-size: 80%;
   margin: 0;
   display: block;
+  padding: 0.25rem;
 }
 
 #postFamineIrelandText {
@@ -209,9 +222,7 @@ h1, h2, h3, p, li, a, span, label, .question, #plantQuizSubmit {
 
 .tooltip .tooltiptext::after {
   content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
+  top: 17rem;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
@@ -225,30 +236,30 @@ h1, h2, h3, p, li, a, span, label, .question, #plantQuizSubmit {
 
 /* IND REV SLIDE */
 #ind-rev-slide {
-  background-image: url("../img/world-map.jpg");
+  background-image: url("../img/ind-rev.gif");
   background-size: cover;
   background-repeat: no-repeat;
   height: 500px;
 }
 
-#ind-rev-slide p {
-  color: white;
-  top: 13%;
-  left: 37%;
-  width: 200px;
-  position: absolute;
-}
-
 #ind-rev-slide p, #ind-rev-slide h3 {
   color: white;
-  position: absolute;
-  left: 37%;
+  top: 11rem
 }
 
-/* QUIZ SLIDE */
+#irish-migrate {
+  height: 500px;
+}
+
+/* SLICK QUIZ SLIDE */
 /* BASE QUIZ STYLES */
 /* These styles ensure that the necessary elements are hidden for toggling */
 /* DO NOT EDIT UNLESS YOU KNOW WHAT YOU ARE DOING!! */
+#slickQuiz {
+  position: relative;
+  top: 5rem;
+}
+
 .startQuiz,
 .nextQuestion,
 .backToQuestion,
@@ -376,4 +387,15 @@ ul.responses li.incorrect p span {
 /* SOURCES-SLIDE */
 .sources-slide li {
   text-align: left;
+}
+
+/************************** Responsiveness **************************/
+@media screen and (min-width:64em) {}
+
+@media screen and (min-width:37.5em) {}
+
+@media screen and (min-width:20em) {
+  body {
+    font-size: 70%;
+  }
 }

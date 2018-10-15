@@ -135,23 +135,94 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 }
 
 // PEASANT SLIDE
-//drag and drop potatoes onto table
-function allowDrop(ev) {
-  ev.preventDefault();
-  console.log('allowDrop activated');
-}
+//line graph
 
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-  console.log('drag activated');
-}
+window.onload = function() {
+  var chart = new CanvasJS.Chart("chartContainer", {
+    title: {
+      text: "European Growth Rates 1750-1850"
+    },
+    data: [{
+        type: "line",
+        dataPoints: [{
+            x: 1750,
+            y: 0.39
+          },
+          {
+            x: 1850,
+            y: 0.63
+          }
 
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
-  peasantsGroup.innerHTML = '<img src="img/peasant.png" alt="peasant icon"><img src="img/peasant.png" alt="peasant icon"><img src="img/peasant.png" alt="peasant icon">';
-  console.log('drop activated');
+        ]
+      },
+      {
+        type: "line",
+        dataPoints: [{
+            x: 1750,
+            y: 0.81
+          },
+          {
+            x: 1850,
+            y: 1.4
+          }
+
+        ]
+      },
+      {
+        type: "line",
+        dataPoints: [{
+            x: 1750,
+            y: 0.61
+          },
+          {
+            x: 1850,
+            y: 1.11
+          }
+
+        ]
+      },
+      {
+        type: "line",
+        dataPoints: [{
+            x: 1750,
+            y: 0.19
+          },
+          {
+            x: 1850,
+            y: 0.62
+          }
+
+        ]
+      },
+      {
+        type: "line",
+        dataPoints: [{
+            x: 1750,
+            y: 0.11
+          },
+          {
+            x: 1850,
+            y: 1.22
+          }
+
+        ]
+      },
+      {
+        type: "line",
+        dataPoints: [{
+            x: 1750,
+            y: 0.19
+          },
+          {
+            x: 1850,
+            y: 0.66
+          }
+        ]
+      }
+    ]
+  });
+
+  chart.render();
 }
 
 // IRISH SLIDE
