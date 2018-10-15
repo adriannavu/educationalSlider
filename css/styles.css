@@ -26,12 +26,8 @@ ul {
   padding: 0;
 }
 
-li {
-  width: 80%;
-}
-
 .transparent {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -112,6 +108,7 @@ li {
 #belladonna-plant, #potato-plant {
   display: inline-block;
   width: 29%;
+  min-width: 110px;
   margin: 5px;
   border-radius: 20px;
 }
@@ -138,6 +135,10 @@ li {
 }
 
 /* PEASANT SLIDE */
+#countryIcons {
+  background: white;
+}
+
 #EuropeIcon {
   background-color: #4f81bc;
 }
@@ -151,7 +152,7 @@ li {
 }
 
 #FranceIcon {
-  background-color: #fefd00;
+  background-color: #4aacc5;
 }
 
 #NetherlandsIcon {
@@ -159,18 +160,19 @@ li {
 }
 
 /* IRISH SLIDE */
+#preFamineIrelandImg, #postFamineIrelandImg {
+  left: 38%;
+  width: 50%;
+}
+
 #preFamineIrelandImg {
   position: relative;
   display: block;
-  left: 38%;
-  height: 200px;
 }
 
 #postFamineIrelandImg {
   position: relative;
   display: none;
-  height: 210px;
-  left: 38%;
 }
 
 .irelandMapText {
@@ -335,6 +337,18 @@ ul.responses li {
   margin-top: 40px;
 }
 
+.startQuiz, .learnMore {
+  color: white;
+  background: #419be0;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.learnMore {
+  width: 104px;
+}
+
 .tryAgain {
   float: none;
   margin: 20px 0;
@@ -427,7 +441,15 @@ ul.responses li.incorrect p span {
     font-size: 1.1em;
   }
 
-  p, label, .question, #plantQuizSubmit, a, li {
+  p, label, .question, #plantQuizSubmit, a, li, .tooltiptext {
     font-size: 80%;
+  }
+
+  label, .question {
+    margin: 0 0.5rem;
+  }
+
+  .slick-dots {
+    bottom: -50px !important;
   }
 }

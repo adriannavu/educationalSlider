@@ -206,18 +206,6 @@ window.onload = function() {
           }
 
         ]
-      },
-      {
-        type: "line",
-        dataPoints: [{
-            x: 1750,
-            y: 0.19
-          },
-          {
-            x: 1850,
-            y: 0.66
-          }
-        ]
       }
     ]
   });
@@ -257,7 +245,7 @@ var quizJSON = {
   "info": {
     "name": "Test Your Knowledge!!",
     "main": "<p>Think you know about potato history? Find out with this super crazy knowledge quiz!</p>",
-    "results": "<h5><a href=https://www.washingtonpost.com/history/2018/10/08/christopher-columbus-potato-that-changed-world/?noredirect=on&utm_term=.f4b5fd7954f7>Learn More</a></h5><p>It's almost impossible imagining the world without the potato. Would the Industrial Revolution ever have happened? Would World War II have been lost by the Allies without the easy-to-grow crop that fed the Allied troops? When you think about it like this, many major milestones in world history can all be at least partially attributed to the simple spud from the Peruvian hilltops.</p>",
+    "results": "<h5 class='learnMore'><a href=https://www.washingtonpost.com/history/2018/10/08/christopher-columbus-potato-that-changed-world/?noredirect=on&utm_term=.f4b5fd7954f7>Learn More</a></h5><p>It's almost impossible imagining the world without the potato. Would the Industrial Revolution ever have happened? Would World War II have been lost by the Allies without the easy-to-grow crop that fed the Allied troops? When you think about it like this, many major milestones in world history can all be at least partially attributed to the simple spud from the Peruvian hilltops.</p>",
     "level1": "Jedi Potato",
     "level2": "Knight Potato",
     "level3": "Padawan Potato",
