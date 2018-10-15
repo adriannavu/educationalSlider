@@ -28,6 +28,7 @@ ul {
 
 .transparent {
   background-color: rgba(0, 0, 0, 0.3);
+  border: 5px solid rgba(0, 0, 0, 0);
 }
 
 .container {
@@ -87,7 +88,7 @@ ul {
 
 #inca-slide p {
   color: white;
-  margin-top: 20%;
+  margin-top: 15%;
 }
 
 .incan-potato {
@@ -452,5 +453,13 @@ ul.responses li.incorrect p span {
 
   .slick-dots {
     bottom: -50px !important;
+  }
+
+  #inca-slide p {
+    margin: 0.5em;
+  }
+
+  .incan-potato {
+    top: 10%;
   }
 }
