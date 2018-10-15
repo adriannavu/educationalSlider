@@ -5,6 +5,7 @@ $(".single-item").slick({
 });
 
 // When user clicks on potato, make it grow
+//first potato (left potato)
 $(document).ready(function() {
   $("#growing-potato1").mouseenter(function() {
     $("#growing-potato1").animate({
@@ -13,7 +14,7 @@ $(document).ready(function() {
     });
   });
 });
-
+//second potato (middle left)
 $(document).ready(function() {
   $("#growing-potato2").mouseenter(function() {
     $("#growing-potato2").animate({
@@ -22,7 +23,7 @@ $(document).ready(function() {
     });
   });
 });
-
+//third potato (middle right potato)
 $(document).ready(function() {
   $("#growing-potato3").mouseenter(function() {
     $("#growing-potato3").animate({
@@ -31,7 +32,7 @@ $(document).ready(function() {
     });
   });
 });
-
+//fourth potato (right potato)
 $(document).ready(function() {
   $("#growing-potato4").mouseenter(function() {
     $("#growing-potato4").animate({
@@ -43,7 +44,6 @@ $(document).ready(function() {
 
 // EUROPE SLIDE
 // Quiz to see if user can differentiate between potato plant and belladonna plant
-
 var myQuestions = [{
   question: "Can you identify the potato plant?",
   answers: {
@@ -135,13 +135,13 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 }
 
 // PEASANT SLIDE
-//line graph
-
+//Load line graph
 window.onload = function() {
   var chart = new CanvasJS.Chart("lineGraph", {
     title: {
       text: "European Population Growth Rates 1750-1850"
     },
+    //Europe (without Russia)
     data: [{
         type: "line",
         dataPoints: [{
@@ -155,6 +155,7 @@ window.onload = function() {
 
         ]
       },
+      //England and Wales growth rate data
       {
         type: "line",
         dataPoints: [{
@@ -168,6 +169,7 @@ window.onload = function() {
 
         ]
       },
+      //Germany growth rate data
       {
         type: "line",
         dataPoints: [{
@@ -181,6 +183,7 @@ window.onload = function() {
 
         ]
       },
+      //France growth rate data
       {
         type: "line",
         dataPoints: [{
@@ -194,6 +197,7 @@ window.onload = function() {
 
         ]
       },
+      //The Netherlands growth rate data
       {
         type: "line",
         dataPoints: [{
@@ -233,14 +237,14 @@ postFamineIrelandImg.addEventListener('click', function() {
   postFamineIrelandLegendIcons.style.display = 'none';
 });
 
-// Initiate Quiz
+// Initiate Slick Quiz
 $(function() {
   $('#slickQuiz').slickQuiz({
     // options
   });
 });
 
-// Quiz questions and answers
+// Slick quiz questions and answers
 var quizJSON = {
   "info": {
     "name": "Test Your Knowledge!!",
@@ -274,7 +278,7 @@ var quizJSON = {
       "correct": "<p><span>That's right!</span> The potato was first domesticated in Peru between 8000 and 5000 BC.</p>",
       "incorrect": "<p><span>Uhh no.</span> The potato was first domesticated in Peru between 8000 and 5000 BC. Did you actually <em>go</em> to kindergarden?</p>" // no comma here
     },
-    { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
+    { // Question 2
       "q": "How did potatoes travel to Europe?",
       "a": [{
           "option": "Floated across the sea",
@@ -297,7 +301,7 @@ var quizJSON = {
       "correct": "<p><span>Nice!</span> Spanish sailors returning from the Andes brought potatoes to Europe in 1536.</p>",
       "incorrect": "<p><span>Nope.</span> Spanish sailors returning from the Andes brought potatoes to Europe in 1536.</p>" // no comma here
     },
-    { // Question 3 - Multiple Choice, Multiple True Answers, Select All
+    { // Question 3
       "q": "What plant did Europeans compare potatoes to when they arrived in 1536?",
       "a": [{
           "option": "Belladonna",

@@ -163,6 +163,7 @@ ul {
 #preFamineIrelandImg, #postFamineIrelandImg {
   left: 38%;
   width: 50%;
+  max-width: 150px;
 }
 
 #preFamineIrelandImg {
