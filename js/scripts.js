@@ -1,6 +1,7 @@
 //initialize Slick slider$
 $(".single-item").slick({
-  dots: true
+  dots: true,
+  draggable: true
 });
 
 // When user clicks on potato, make it grow
@@ -133,6 +134,26 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 
 }
 
+// PEASANT SLIDE
+//drag and drop potatoes onto table
+function allowDrop(ev) {
+  ev.preventDefault();
+  console.log('allowDrop activated');
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+  console.log('drag activated');
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+  peasantsGroup.innerHTML = '<img src="img/peasant.png" alt="peasant icon"><img src="img/peasant.png" alt="peasant icon"><img src="img/peasant.png" alt="peasant icon">';
+  console.log('drop activated');
+}
+
 // IRISH SLIDE
 // When user clicks preFamineIreland, display PostFamineIreland instead with legend
 preFamineIrelandImg.addEventListener('click', function() {
@@ -258,7 +279,7 @@ var quizJSON = {
           "correct": false
         } // no comma here
       ],
-      "correct": "<p><span>Correct!</span> The Irish Potato Famine occured from 1854-1852.</p>",
+      "correct": "<p><span>Correct!</span> The Irish Potato Famine occured from 1845-1852.</p>",
       "incorrect": "<p><span>Fail.</span> Sorry. You lose. The Irish Potato Famine occured from 1854-1852.</p>" // no comma here
     },
     { // Question 5

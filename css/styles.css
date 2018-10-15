@@ -102,6 +102,14 @@ h1, h2, h3, p, li, a, span, label, .question, #plantQuizSubmit {
   margin: 5px 0 5px 30px;
 }
 
+/* PEASANT SLIDE */
+#table {
+  width: 200px;
+  height: 90px;
+  border: 1px solid #aaaaaa;
+  background-color: brown;
+}
+
 /* IRISH SLIDE */
 #preFamineIrelandImg {
   position: relative;
@@ -213,6 +221,28 @@ h1, h2, h3, p, li, a, span, label, .question, #plantQuizSubmit {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+/* IND REV SLIDE */
+#ind-rev-slide {
+  background-image: url("../img/world-map.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+#ind-rev-slide p {
+  color: white;
+  top: 13%;
+  left: 37%;
+  width: 200px;
+  position: absolute;
+}
+
+#ind-rev-slide p, #ind-rev-slide h3 {
+  color: white;
+  position: absolute;
+  left: 37%;
 }
 
 /* QUIZ SLIDE */
