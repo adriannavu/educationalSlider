@@ -140,7 +140,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 window.onload = function() {
   var chart = new CanvasJS.Chart("lineGraph", {
     title: {
-      text: "European Growth Rates 1750-1850"
+      text: "European Population Growth Rates 1750-1850"
     },
     data: [{
         type: "line",

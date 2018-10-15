@@ -138,11 +138,24 @@ li {
 }
 
 /* PEASANT SLIDE */
-#table {
-  width: 200px;
-  height: 90px;
-  border: 1px solid #aaaaaa;
-  background-color: brown;
+#EuropeIcon {
+  background-color: #4f81bc;
+}
+
+#EnglandWalesIcon {
+  background-color: #c0504e;
+}
+
+#GermanyIcon {
+  background-color: #9bbb58;
+}
+
+#FranceIcon {
+  background-color: #fefd00;
+}
+
+#NetherlandsIcon {
+  background-color: #8064a1;
 }
 
 /* IRISH SLIDE */
@@ -181,7 +194,7 @@ li {
   margin: 0;
   display: block;
 } */
-.PopFallLegendSquare {
+.LegendSquare {
   display: inline-block;
   height: 15px;
   width: 15px;
@@ -208,12 +221,7 @@ li {
   background-color: #1b8000;
 }
 
-#postFamineIrelandLegendIcons {
-  position: relative;
-  display: none;
-}
-
-#postFamineIrelandLegendText {
+#postFamineIrelandLegendIcons, #postFamineIrelandLegendText {
   position: relative;
   display: none;
 }
