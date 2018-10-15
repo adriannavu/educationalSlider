@@ -138,7 +138,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton) 
 //line graph
 
 window.onload = function() {
-  var chart = new CanvasJS.Chart("chartContainer", {
+  var chart = new CanvasJS.Chart("lineGraph", {
     title: {
       text: "European Growth Rates 1750-1850"
     },

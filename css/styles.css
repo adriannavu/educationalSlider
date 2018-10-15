@@ -18,16 +18,28 @@ h3 {
   font-size: 1.5rem;
 }
 
-p, label, .question, #plantQuizSubmit {
+p, label, .question, #plantQuizSubmit, a, li {
   font-size: 1rem;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  width: 80%;
+}
+
+.transparent {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .container {
   margin: 0 auto;
-  padding: 40px;
+  padding: 30px;
   width: 80%;
   color: #333;
-  background: #419be0;
+  background: #22820E;
 }
 
 .single-item {
@@ -39,6 +51,14 @@ p, label, .question, #plantQuizSubmit {
 
 .slick-slider .slick-track, .slick-slider .slick-list {
   height: inherit;
+}
+
+.slick-next:before, .slick-prev:before {
+  color: black;
+}
+
+.slick-slide {
+  background-color: bisque;
 }
 
 /* TITLE SLIDE */
@@ -58,6 +78,7 @@ p, label, .question, #plantQuizSubmit {
 /* PERU MAP SLIDE */
 #peru-map {
   height: 389px;
+  top: 30px;
 }
 
 /* INCA SLIDE */
@@ -70,7 +91,7 @@ p, label, .question, #plantQuizSubmit {
 
 #inca-slide p {
   color: white;
-  margin-top: 15%;
+  margin-top: 20%;
 }
 
 .incan-potato {
@@ -128,7 +149,7 @@ p, label, .question, #plantQuizSubmit {
 #preFamineIrelandImg {
   position: relative;
   display: block;
-  left: 37%;
+  left: 38%;
   height: 200px;
 }
 
@@ -257,7 +278,6 @@ p, label, .question, #plantQuizSubmit {
 /* DO NOT EDIT UNLESS YOU KNOW WHAT YOU ARE DOING!! */
 #slickQuiz {
   position: relative;
-  top: 5rem;
 }
 
 .startQuiz,
@@ -390,12 +410,16 @@ ul.responses li.incorrect p span {
 }
 
 /************************** Responsiveness **************************/
-@media screen and (min-width:64em) {}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
 
-@media screen and (min-width:37.5em) {}
+  h2, h3 {
+    font-size: 1.1em;
+  }
 
-@media screen and (min-width:20em) {
-  body {
-    font-size: 70%;
+  p, label, .question, #plantQuizSubmit, a, li {
+    font-size: 80%;
   }
 }
