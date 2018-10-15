@@ -321,7 +321,7 @@ ul.responses li {
   width: auto;
   padding: 5px 15px;
   color: #ffffff;
-  background-color: #419be0;
+  background-color: #22820E;
   border: 1px solid #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -339,7 +339,7 @@ ul.responses li {
 
 .startQuiz, .learnMore {
   color: white;
-  background: #419be0;
+  background: #22820E;
   border: 1px solid white;
   padding: 5px 10px;
   border-radius: 5px;
